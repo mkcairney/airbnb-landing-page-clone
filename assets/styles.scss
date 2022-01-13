@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Righteous&family=Work+Sans&display=swap");
+
+@mixin display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+header {
+  background: rgb(0, 0, 0);
+  height: 110vh;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 12px;
+  font-size: 15px;
+  text-align: center;
+}
+
+nav {
+  @include display;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  justify-content: space-around;
+}
+
+ul {
+  @include display;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-center {
+  position: relative;
+  left: 5%;
+}
+
+.nav-center li:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.nav-right {
+    gap: 0;
+    
+}
+
+.nav-right li:hover {
+  background: rgba(255, 255, 255, 0.171);
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 1px auto;
+}
+
+#logo {
+  // margin-right: 15rem;
+  padding-top: 4px;
+  position: relative;
+  right: 38%;
+}
+
+#becomeahost {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#profile {
+  display: flex;
+  background: white;
+  color: rgb(112, 112, 112);
+  font-size: 2rem;
+  gap: 10px;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+#hamburger {
+  font-size: 0.95rem;
+  padding: 2px;
+  color: rgb(77, 77, 77);
+}
