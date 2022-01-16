@@ -15,11 +15,14 @@ html,
 }
 
 header {
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.582);
   height: 110vh;
   color: white;
 }
 
+// =================
+// NAVBAR
+// =================
 li {
   list-style-type: none;
   padding: 10px 12px;
@@ -32,6 +35,10 @@ nav {
   padding: 1rem;
   padding-left: 2.5rem;
   justify-content: space-around;
+  position: fixed;
+  background: black;
+  left: 0;
+  right: 0;
 }
 
 ul {
@@ -46,20 +53,18 @@ ul {
 }
 
 .nav-center li:hover {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.774);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.774);
 }
 
 .nav-right {
-    gap: 0;
-    
+  gap: 0;
 }
 
 .nav-right li:hover {
   background: rgba(255, 255, 255, 0.171);
   cursor: pointer;
   border-radius: 50px;
-  padding: 1px auto;
 }
 
 #logo {
@@ -89,4 +94,24 @@ ul {
   font-size: 0.95rem;
   padding: 2px;
   color: rgb(77, 77, 77);
+}
+
+// =================
+// INPUT BAR
+// =================
+
+#input-bar {
+  display: flex;
+  background: white;
+  height: 4rem;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+}
+
+#input-bar input:nth-child(1) {
+  padding: 1rem 4rem 0.2rem 2rem;
+  border-radius: 40px;
 }
