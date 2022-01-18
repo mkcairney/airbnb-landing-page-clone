@@ -57,11 +57,23 @@
       </nav>
 
       <div id="input-bar">
-        <input type="text" placeholder="Where are you going?" />
-        <input type="text" placeholder="" /><input
-          type="text"
-          placeholder=""
-        /><input type="text" placeholder="" />
+        <div class="input-section">
+          <label for="input1">Location</label
+          ><input
+            name="input1"
+            type="text"
+            placeholder="Where are you going?"
+          />
+        </div>
+        <div class="input-section">
+          <label for="input2">Check in</label
+          ><input type="text" name="input2" placeholder="Add dates" />
+        </div>
+
+        <div class="input-section"><label for=""><label for="input3">Check out</label><input type="text" name="input3" placeholder="Add dates" /></div>
+        <div class="input-section"><label for=""></label for="input4">Guests</label><input type="text" name="input4" placeholder="Add guests" /></div>
+        
+        <button><i class="fas fa-search"></i></button>
       </div>
     </header>
   </body>

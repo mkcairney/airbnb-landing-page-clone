@@ -109,9 +109,36 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50px;
+  button {
+    border-radius: 50px;
+    background: rgb(233, 51, 75);
+    width: 4.2rem;
+    height: 80%;
+    border: none;
+    align-self: center;
+    margin-right: 0.8rem;
+    color: white;
+    font-size: 1.1rem;
+  }
 }
 
-#input-bar input:nth-child(1) {
-  padding: 1rem 4rem 0.2rem 2rem;
-  border-radius: 40px;
+.input-section {
+  color: black;
+  display:flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  input {
+    border: none;
+  }
+}
+.input-section:hover {
+  background: rgba(165, 165, 218, 0.26);
+  label {
+    cursor: pointer;
+  }
+  input {
+    background: rgba(165, 165, 218, 0);
+  }
+  cursor: pointer;
 }
